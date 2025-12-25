@@ -111,15 +111,19 @@ php artisan storage:link
 
 ### 7. Build Assets
 
+**Note:** The authentication pages (login/register) use Laravel Breeze with Vite, so assets need to be compiled.
+
+**Option A - Development (with hot reload):**
 ```bash
 npm run dev
 ```
+This starts the Vite development server. Keep this running in a separate terminal while developing.
 
-Or for production:
-
+**Option B - Production build (one-time compilation):**
 ```bash
 npm run build
 ```
+This compiles assets once. Use this if you don't need hot reload during development.
 
 ### 8. Start the Development Server
 
